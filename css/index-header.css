@@ -12,10 +12,7 @@ svg {
 	height: 50px;
 }
 
-svg circle {
-	cx: 25; 
-	cy: 25;	
-	r :25; 
+svg circle { 
 	fill: white;
 }
 
