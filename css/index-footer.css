@@ -1,0 +1,80 @@
+footer {
+	background: #fff;
+}
+
+footer section {
+	background: #E7E8E8;
+	text-align: center;
+}
+
+footer h2 {
+	text-align: center;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+footer section span {
+	display: none;
+}
+
+footer form label input {
+	display: block;
+	height: 25px;
+	width: 230px;
+	margin: 10px auto;	
+}
+
+footer section form textarea {
+	display: block;
+	width: 230px;
+	margin: 5px auto;
+}
+
+footer section div {
+	max-width: 236px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer section div input {
+	border: 0;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 115px;
+    height: 30px;
+    font-size: 1.2em;
+    background: #FD9600;
+}
+
+footer section div input:hover {
+	background: #F45528;
+}
+
+/*icons start*/
+footer .social_icons {
+	text-align: center;
+	padding-top: 10px;
+	background: #E7E8E8;
+}
+
+footer .social_icons p {
+	color: #000;
+	margin: 0;
+}
+
+footer .social_icons img {
+	display: inline-block;
+	margin: 5px 10px;
+	width: 57px; 
+	border-radius: 12px;
+}
+/*icons end*/
+
+footer .fbottom {
+	text-align: center;
+}
+
+footer .fbottom p:last-child {
+	display: none;
+}

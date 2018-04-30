@@ -1,0 +1,17 @@
+.slide-show {
+	color: #fff;
+	background: #000;
+	text-align: center;
+}
+
+.slide-show img {
+	width: 100%;
+}
+
+.slide-show div {
+	margin: 0 5%;
+}
+
+.slide-show div :not(:first-of-type) {
+	display: none;
+}

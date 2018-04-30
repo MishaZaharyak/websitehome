@@ -1,0 +1,86 @@
+.about-me {
+    background: #E7E8E8;
+}
+
+.about-me section {
+	margin: 0 5%;
+}
+
+.about-me section img {
+	max-width: 100%;
+}
+
+.about-me h3, .about-me h2  {
+	text-align: center;
+}
+
+.about-me .button {
+	width: 90%;
+    height: 30px;
+    font-size: 1.3em;
+    border-radius: 8px;
+    border: 0;
+    background: #FD9600;
+    margin: 0 5%;
+}
+
+.about-me .button:hover {
+	background: #F45528;
+	cursor: pointer;
+}
+
+.about-me .bt2 {
+	background: #FEBB00;
+}
+
+.about-me .bt3 {
+	background: #FDF500;
+}
+
+
+.about-me .heading-2, .about-me .heading-3 {
+	display: none;
+}
+
+
+
+@media screen and (min-width: 601px) {
+
+.about-me .button {
+	display: none;
+}
+
+.about-me .heading-2, .about-me .heading-3 {
+	display: block;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

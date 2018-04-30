@@ -1,0 +1,194 @@
+.header_top {
+	color: white;
+	background: #000;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	height: 52px;
+	padding: 0 3%;
+} 
+
+svg {
+	width: 50px; 
+	height: 50px;
+}
+
+svg circle {
+	cx: 25; 
+	cy: 25;	
+	r :25; 
+	fill: white;
+}
+
+svg text {
+	font-size: 1.8em;
+	font-family: Aria;
+	fill: #000; 
+}
+
+.header_top p {
+	font-family: Aria;
+	font-size: 1.5em;
+	margin: auto 0;
+}
+/*website label end*/
+
+.header_top nav {
+	display: none;
+}
+
+.header_top div:last-child {
+	display: flex;
+	align-self: center;
+	justify-content: flex-end;
+}
+
+/*burger menu*/
+.header_top div:last-child a {
+	text-decoration: none;
+	font-size: 2em;
+	color: #ffffff;
+}
+
+/*block language*/
+.header_top div:last-child p {
+	display: none;
+}
+
+.header_top div:last-child img {
+	width: 57px;
+	height: 33px;
+	border: 1px solid white;
+	display: none;
+}
+
+
+.home {
+	background: #000;
+	color: #ffffff;
+	display: flex;
+    height: 450px;
+}
+
+.home div {
+	text-align: center;
+	max-width: 350px;
+	margin: auto;
+}
+
+.home div h1 {
+	color: #999;
+	margin: 0 0 30px 0;
+	font-weight: lighter;
+}
+
+.home div h1 span {
+	font-weight: bold;
+	color: #fcac45;
+}
+
+.home div .white_text {
+	color: #fff;
+}
+
+.home div p {
+	margin-bottom: 0;	    
+	padding-bottom: 5%;
+	color: #999;
+}
+
+.home div p span {
+	color: #fcac45;	
+}
+
+
+
+
+@media screen and (min-width: 601px) {
+	
+.header_top {
+	grid-template-columns: 20% 1fr 10%;
+	height: 80px;
+} 
+
+svg {
+	display: none;
+}
+
+/*menu*/
+.header_top nav {
+	display: block;
+}
+
+.header_top nav ul {
+	padding: 0;
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header_top nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+
+.header_top nav ul li a:hover {
+	border-bottom: 3px solid #fcac45;
+}
+
+/*block language*/
+.header_top div:last-child a {
+	display: none;
+}
+
+.header_top div:last-child img:first-of-type {
+	display: block;
+	margin-left: 10px;
+}
+
+.header_top div:last-child img:hover {
+	border: 3px solid #fcac45;
+}
+
+.home div {
+	max-width: 500px;
+	margin-top: 125px;
+}
+
+.home div h1 {
+	font-size: 40px;
+	margin: 0 0 45px 0;
+}
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 750px) {
+
+.header_top {
+	grid-template-columns: 20% 1fr 20%;
+}		
+
+.header_top nav ul {
+    justify-content: space-between;
+}
+
+.header_top div:last-child p {
+	display: block;
+	font-size: 1.5em;
+}
+
+
+
+
+}
+	
