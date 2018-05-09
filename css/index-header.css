@@ -149,6 +149,7 @@ svg {
 
 .header_top div:last-child img:hover {
 	border: 3px solid #fcac45;
+	cursor: pointer;
 }
 
 .home div {

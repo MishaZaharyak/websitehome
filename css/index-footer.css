@@ -8,9 +8,8 @@ footer section {
 }
 
 footer h2 {
-	text-align: center;
 	color: #000;
-	margin-bottom: 5px;
+	margin-bottom: 17px;
 }
 
 footer section span {
@@ -21,23 +20,33 @@ footer form label input {
 	display: block;
 	height: 25px;
 	width: 230px;
-	margin: 10px auto;	
+	margin: 10px auto;
+	padding: 2px;
+	border: 1px solid #999;	
 }
 
-footer section form textarea {
+footer form textarea {
 	display: block;
 	width: 230px;
 	margin: 5px auto;
+	border: 1px solid #999;
 }
 
-footer section div {
+footer form textarea:hover,
+footer form label input:hover {
+	border: 1px solid #faca45;
+
+}
+
+/*buttons*/
+footer section .buttons {
 	max-width: 236px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 }
 
-footer section div input {
+footer section .buttons input {
 	border: 0;
     border-radius: 5px;
     margin: 5px 0;
@@ -47,7 +56,7 @@ footer section div input {
     background: #FD9600;
 }
 
-footer section div input:hover {
+footer section .buttons input:hover {
 	background: #F45528;
 }
 
@@ -73,8 +82,158 @@ footer .social_icons img {
 
 footer .fbottom {
 	text-align: center;
+	background: #000;
+	color: #fff;
+}
+
+footer .fbottom > p {
+	margin: 0;
+	padding: 16px 0;
 }
 
 footer .fbottom p:last-child {
 	display: none;
+}
+
+
+
+
+@media screen and (min-width: 500px) {
+
+footer section span {
+	display: inline-block;
+}
+
+footer form label {
+	display: grid;
+    grid-template: 1fr / 2fr 3fr;
+    grid-gap: 10px;
+}
+
+footer form label span {
+	margin: auto 0;
+    justify-self: end;
+}
+
+footer form label[for="text_area"] span {
+	margin: 0;
+}
+
+footer form label input {
+	margin: 10px 0;	
+}
+
+footer form textarea {
+	margin: 5px 0;
+}
+
+footer section .buttons {
+	margin: 0;
+	padding-left: 41%;
+}
+
+footer .fbottom p:last-child {
+	display: block;
+}
+
+footer .fbottom {
+	display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    text-align: right;
+    align-items: center;
+}
+
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+footer form {
+	margin: 0 auto;
+    max-width: 450px;
+}	
+
+footer form label {
+    font-size: 20px;
+}
+
+footer .social_icons p {
+	font-size: 20px;
+}
+
+footer .social_icons img {
+	margin: 5px 15px;
+	width: 70px; 
+}
+
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+footer section {
+	padding-bottom: 25px;
+	display: grid;
+	grid-template: 'header header'
+				   'form icons'
+				   / 4fr 2fr ;
+}
+
+footer section h2 {
+	grid-area: header;
+}
+
+footer section form {
+	grid-area: form;
+}
+
+footer section .social_icons {
+	grid-area: icons;
+	padding-top: 3px;
+    display: grid;
+    grid-template: 'header header' 
+                   'instagram pinterest' 
+                   'facebook skype' 
+                   / 1fr 1fr;	
+    grid-gap: 10px;
+}
+
+footer .social_icons p {
+	grid-area: header;
+}
+
+footer .social_icons img {
+	margin: 0;
+	width: 75px; 
+}
+
+footer .social_icons img:nth-child(2) {
+	grid-area: instagram;
+	justify-self: flex-end;
+	align-self: flex-end;
+} 
+
+footer .social_icons img:nth-child(3) {
+	grid-area: facebook;
+	justify-self: flex-end;
+	align-self: flex-start;
+}
+
+footer .social_icons img:nth-child(4) {
+	grid-area: skype;
+	justify-self: flex-start;
+	align-self: flex-start;
+}
+
+footer .social_icons img:last-child {
+	grid-area: pinterest;
+	justify-self: flex-start;
+	align-self: flex-end;
+}
+
+
+
 }
