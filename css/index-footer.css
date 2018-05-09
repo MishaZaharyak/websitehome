@@ -214,25 +214,25 @@ footer .social_icons img {
 
 footer .social_icons img:nth-child(2) {
 	grid-area: instagram;
-	justify-self: flex-end;
+	justify-self: end;
 	align-self: flex-end;
 } 
 
 footer .social_icons img:nth-child(3) {
 	grid-area: facebook;
-	justify-self: flex-end;
+	justify-self: end;
 	align-self: flex-start;
 }
 
 footer .social_icons img:nth-child(4) {
 	grid-area: skype;
-	justify-self: flex-start;
+	justify-self: start;
 	align-self: flex-start;
 }
 
 footer .social_icons img:last-child {
 	grid-area: pinterest;
-	justify-self: flex-start;
+	justify-self: start;
 	align-self: flex-end;
 }
 
