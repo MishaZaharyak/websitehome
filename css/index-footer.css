@@ -69,7 +69,9 @@ footer .social_icons {
 
 footer .social_icons p {
 	color: #000;
+	font-size: 24px;
 	margin: 0;
+	font-weight: 600;
 }
 
 footer .social_icons img {
@@ -132,6 +134,10 @@ footer section .buttons {
 	padding-left: 41%;
 }
 
+footer .social_icons p {
+	font-size: 28px;
+}
+
 footer .fbottom p:last-child {
 	display: block;
 }
@@ -157,10 +163,6 @@ footer form {
 
 footer form label {
     font-size: 20px;
-}
-
-footer .social_icons p {
-	font-size: 20px;
 }
 
 footer .social_icons img {
@@ -234,6 +236,34 @@ footer .social_icons img:last-child {
 	align-self: flex-end;
 }
 
+}
 
+
+
+@media screen and (min-width: 850px) {
+
+footer section .social_icons {
+    grid-template: 'header header header header' 
+                   'instagram facebook pinterest skype'                 
+                   / 1fr 1fr;	
+    grid-gap: 0 10px;
+    margin: 0 15% 9% 0;
+}	
+
+footer .social_icons p {
+    align-self: center;
+}
+
+}
+
+@media screen and (min-width: 1000px) {
+
+footer section .social_icons {
+	grid-gap: 0 15px;
+}
+
+footer .social_icons img {
+	width: 80px; 
+}
 
 }
