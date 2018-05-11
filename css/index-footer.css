@@ -212,25 +212,25 @@ footer .social_icons img {
 	width: 75px; 
 }
 
-footer .social_icons img:nth-child(2) {
+footer .social_icons a:nth-child(2) {
 	grid-area: instagram;
 	justify-self: end;
 	align-self: flex-end;
 } 
 
-footer .social_icons img:nth-child(3) {
+footer .social_icons a:nth-child(3) {
 	grid-area: facebook;
 	justify-self: end;
 	align-self: flex-start;
 }
 
-footer .social_icons img:nth-child(4) {
+footer .social_icons a:nth-child(4) {
 	grid-area: skype;
 	justify-self: start;
 	align-self: flex-start;
 }
 
-footer .social_icons img:last-child {
+footer .social_icons a:last-child {
 	grid-area: pinterest;
 	justify-self: start;
 	align-self: flex-end;
