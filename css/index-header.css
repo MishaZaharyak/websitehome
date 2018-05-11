@@ -1,4 +1,6 @@
 .header_top {
+	position: sticky;
+	top: 0;
 	color: white;
 	background: #000;
 	display: grid;
@@ -29,7 +31,7 @@ svg text {
 }
 /*website label end*/
 
-.header_top nav {
+header nav {
 	display: none;
 }
 
@@ -44,6 +46,47 @@ svg text {
 	text-decoration: none;
 	font-size: 2em;
 	color: #ffffff;
+	padding: 0 9%;
+    box-sizing: border-box;
+}
+
+/*#################*/
+/*.a {
+	width: 100%;
+    display: block;
+    position: absolute;
+    top: 52px;
+    background: green;
+}
+
+.b {
+	text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.c {
+	border-top: 0.1px solid white;
+    list-style-type: none;
+    background: #fbbb00;
+    padding: 15px 0;
+}
+
+.menu-list .list-item:hover {
+	background: #f0f;
+}
+
+.d {
+	color: #000;
+    text-decoration: none;
+}*/
+/*#################*/
+
+
+.header_top div:last-child a:hover {
+	border: 2px solid orange;
 }
 
 /*block language*/
@@ -166,7 +209,13 @@ svg {
 
 }
 
+@media screen and (min-width: 700px) {
 
+.header_top {
+	position: static;
+}
+
+}
 
 
 
