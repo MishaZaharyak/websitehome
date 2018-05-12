@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 .header_top {
 	position: sticky;
 	top: 0;
 	color: white;
 	background: #000;
 	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-columns: 52px 3fr 1fr;
 	height: 52px;
 	padding: 0 3%;
 } 
@@ -25,9 +26,13 @@ svg text {
 }
 
 .header_top p {
-	font-family: Aria;
+	font-family: 'Lobster', cursive;
 	font-size: 1.5em;
 	margin: auto 0;
+}
+
+.header_top p span {
+	display: none;
 }
 /*website label end*/
 
@@ -51,40 +56,33 @@ header nav {
 }
 
 /*#################*/
-.a {
+.dropMenu {
 	width: 100%;
     display: block;
     position: absolute;
     top: 52px;
-    background: green;
 }
 
-.b {
+.menu.dropMenu .menu-list{
 	text-align: center;
     width: 100%;
     display: inline-block;
     margin: 0;
     padding: 0;
 }
-.menu.a .menu-list{
-	text-align: center;
-    width: 100%;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-.c {
+.menu.dropMenu .list-item {
 	border-top: 0.1px solid white;
     list-style-type: none;
     background: #fbbb00;
     padding: 15px 0;
 }
 
-.menu-list .list-item:hover {
-	background: #f0f;
+.menu.dropMenu .list-item:hover {
+	background: #ff8f00;
 }
 
-.d {
+.menu.dropMenu .list-item a {
+	display: block;
 	color: #000;
     text-decoration: none;
 }
@@ -149,7 +147,7 @@ header nav {
 
 
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 618px) {
 	
 .header_top {
 	grid-template-columns: 20% 1fr 10%;
@@ -158,6 +156,15 @@ header nav {
 
 svg {
 	display: none;
+}
+.header_top .logo {
+	font-size: 1.4em;
+	margin-bottom: 26px;
+}
+
+.header_top .logo span {
+	display: inline-block;
+	font-size: 1.5em;
 }
 
 /*menu*/
@@ -211,8 +218,6 @@ svg {
 	margin: 0 0 45px 0;
 }
 
-
-
 }
 
 @media screen and (min-width: 700px) {
@@ -222,8 +227,6 @@ svg {
 }
 
 }
-
-
 
 @media screen and (min-width: 750px) {
 
@@ -236,12 +239,10 @@ svg {
 }
 
 .header_top div:last-child p {
+	font-family: Aria;
 	display: block;
 	font-size: 1.5em;
 }
-
-
-
 
 }
 	

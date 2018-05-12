@@ -17,25 +17,24 @@
 		<header class="header_top">
 			<!-- website label start -->
 		    <svg>
-		    	<button class=" btn btn-p"></button>
 				<circle  r="25" cx="25" cy="25"/>
 				<text x="4" y="33">MZ</text>	
 			</svg>
-            <p>Website</p>
+            <p class="logo"><span>MZ</span>Website</p>
             <!-- menu -->
 			<nav class="menu">
 				<ul class="menu-list">
 					<li class="list-item">
-						<a href="#">Home</a>
+						<a href="#home">Home</a>
 					</li>
 					<li class="list-item">
-						<a href="#">About Me</a>
+						<a href="#aboutMe">About Me</a>
 					</li>
 					<li class="list-item">
-						<a href="#">I like It</a>
+						<a href="#iLikeIt">I like It</a>
 					</li>
 					<li class="list-item">
-						<a href="#">Contact Me</a>
+						<a href="#contactMe">Contact Me</a>
 					</li>
 				</ul>
 			</nav>
@@ -48,7 +47,7 @@
 			</div>
 		</header>
 		<article>
-			<div class="home">	
+			<div class="home" id="home">	
 				<div>		
 					<h1>Welcome to My <span>Website</span></h1>
 					<p>Hello, my name is <span>Mykhailo Zakharyak</span>, i am <span class="white_text">Front-End Developer</span>, and glad to see you in my website</p>
@@ -58,7 +57,7 @@
 
 		<main>
 			<!-- about me start -->
-			<article class="about-me">
+			<article class="about-me" id="aboutMe">
 				<h2>About Me</h2>
 				<button class="button bt1">Heading 1</button>
 				<section class="heading-1">
@@ -88,7 +87,7 @@
 			<!-- about me end -->
 
 			<!-- i like it start -->
-			<section class="slide-show">
+			<section class="slide-show" id="iLikeIt">
 				<h2>I Like It</h2>
 				<div>
 					<p>Play Football</p>
@@ -100,7 +99,7 @@
 					<p>To visits beautiful places</p>
 					<img src="images/beautiful_places.jpg" alt="beautiful places">
 					<p>Gim</p>
-					<img src="images/gim.jpg" alt="gim">
+					<img src="images/gym.jpg" alt="gym">
 					<p>Music</p>
 					<img src="images/music.jpg" alt="music">
 					<p>Dance</p>
@@ -114,7 +113,7 @@
 		<!-- main end -->
 
 		<!-- footer start -->
-		<footer class="footer">
+		<footer class="footer" id="contactMe">
 			<!-- contact me start -->
 			<section>
 				<h2>Contact Me</h2>
@@ -122,8 +121,7 @@
 				id="form_contact">
 					<label>
 	                	<span>Fullname :</span>
-	                	<input type="text" name="fullname" placeholder="Your Name" 
-	                	pattern="[аa-їzАA-ЯZ]" required/>
+	                	<input type="text" name="fullname" placeholder="Your Name" required/>
 	            	</label>
 	            	<label>
 	                	<span>Email :</span>

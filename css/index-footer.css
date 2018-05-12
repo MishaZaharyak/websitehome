@@ -53,11 +53,12 @@ footer section .buttons input {
     width: 115px;
     height: 30px;
     font-size: 1.2em;
-    background: #FD9600;
+    background: #fbbb00;
+    box-shadow: 8px 7px 14px black;
 }
 
 footer section .buttons input:hover {
-	background: #F45528;
+	background: #10bef2;
 }
 
 /*icons start*/
@@ -74,11 +75,21 @@ footer .social_icons p {
 	font-weight: 600;
 }
 
+footer .social_icons a {
+	text-decoration: none;
+}
+
 footer .social_icons img {
 	display: inline-block;
 	margin: 5px 10px;
 	width: 57px; 
 	border-radius: 12px;
+}
+
+footer .social_icons img:hover {
+	transition-duration: 0.7s;
+	transform: scale(1.2, 1.2);
+	box-shadow: 13px 6px 16px 0px black;
 }
 /*icons end*/
 
@@ -104,6 +115,7 @@ footer .fbottom p:last-child {
 
 footer section span {
 	display: inline-block;
+
 }
 
 footer form label {
@@ -115,6 +127,7 @@ footer form label {
 footer form label span {
 	margin: auto 0;
     justify-self: end;
+    text-shadow: 6px 4px 10px black;
 }
 
 footer form label[for="text_area"] span {
