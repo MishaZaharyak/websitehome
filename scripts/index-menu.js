@@ -15,4 +15,3 @@ listItemAnchor.forEach(function(anchor) {
 		opened = !opened;
 	})
 })
-console.log(listItemAnchor);
