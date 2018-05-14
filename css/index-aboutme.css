@@ -25,7 +25,8 @@
     background: #FD9600;
 }
 
-.about-me .button:hover {;
+.about-me .button:hover,
+.active {
 	opacity: 0.6;
 	cursor: pointer;
 }
@@ -43,7 +44,8 @@
 }
 
 
-main .heading-2, main .heading-3 {
+main .heading-2, 
+main .heading-3 {
 	display: none;
 }
 

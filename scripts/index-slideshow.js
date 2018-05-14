@@ -30,18 +30,18 @@ function showSlides(n) {
 showSlides(slideIndex);
 
 function plusSlides() {
-	showSlides(slideIndex -= 1);
-}
-
-let previous = document.getElementsByClassName('prev')[0];
-previous.addEventListener('click', plusSlides);
-
-function minusSlides() {
 	showSlides(slideIndex += 1);
 }
 
+let previous = document.getElementsByClassName('prev')[0];
+previous.addEventListener('click', minusSlides);
+
+function minusSlides() {
+	showSlides(slideIndex -= 1);
+}
+
 let next = document.getElementsByClassName('next')[0];
-next.addEventListener('click', minusSlides);
+next.addEventListener('click', plusSlides);
 
 function currentSlide(n) {
 	showSlides(slideIndex = n);
