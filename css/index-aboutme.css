@@ -3,99 +3,137 @@
 }
 
 .about-me section {
-	margin: 0 5%;
+	position: relative;
 	text-align: center;
-	padding-bottom: 20px;
+	margin-bottom: 1px;
+	overflow: hidden;
 }
 
-.about-me section img {
-	max-width: 100%;
+.about-me section input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
 }
 
-.about-me h3, .about-me h2  {
-	text-align: center;
-}
-
-.about-me .button {
+.about-me section label {
 	width: 100%;
-    height: 30px;
-    font-size: 1.3em;
     border-radius: 4px;
     border: 0;
     background: #FD9600;
-}
-
-.about-me .button:hover,
-.active {
-	opacity: 0.6;
+	position: relative;
+	display: block;
+	font-weight: bold;
+	line-height: 3;
 	cursor: pointer;
+	margin-bottom: 1px;
 }
 
-.about-me .bt1 {
-	margin-top: 15px;
+.about-me section label:hover {
+	opacity: 0.6;
 }
 
-.about-me .bt2 {
-	background: #ffa400;
+.about-me .summary label {
+	margin-top: 20px;
 }
 
-.about-me .bt3 {
-	background: #febb00;
+.about-me .skills label {
+	margin-bottom: 5px;
 }
 
+.about-me section .heading-content {
+	max-height: 0;
+	overflow: hidden;
+	padding: 0 3%;
+	transition: max-height 0.35s;
+}
 
-main .heading-2, 
-main .heading-3 {
+.about-me section input:checked ~ .heading-content {
+	max-height: 200em;
+}
+
+.about-me section .heading-content img {
+	max-width: 100%;
+}
+
+.about-me h2  {
+	text-align: center;
+}
+
+.about-me h3 {
 	display: none;
 }
+
+.about-me .containerForMiddleScreen {
+	display: none;
+}
+
 
 
 
 @media screen and (min-width: 700px) {
 
-.about-me .button {
+.about-me .summary, 
+.about-me .motivation, 
+.about-me .skills {
 	display: none;
 }
 
-.about-me section {
-	margin: 40px 2% 0 2%;
+.about-me h3 {
+	display: block;
+	text-align: center;
+}
+
+.about-me .containerForMiddleScreen {
+	display: block;
+}
+
+.about-me .containerForMiddleScreen section {
 	display: grid;
 	grid-template: 1fr / 1fr 2fr;
 	grid-gap: 10px;
+	padding-bottom: 20px;
+	margin: 0 2%;
+	text-align: center;
 }
 
-.about-me section div {
+.about-me .containerForMiddleScreen section img {
+	max-width: 100%;
+}
+
+.about-me .containerForMiddleScreen section div {
 	display: grid;
 	align-content: center;
 }
 
-.about-me .heading-1 {
-	padding-bottom: 0;
+.about-me .containerForMiddleScreen section div h3 {
+	padding: 0;
 }
 
-.about-me .heading-2 {
+.about-me .containerForMiddleScreen .middleScreenHeading-1 {
+	margin-top: 30px;
+}
+
+.about-me .containerForMiddleScreen .middleScreenHeading-2 {
 	grid-template: 1fr / 2fr 1fr;
 }
 
-.about-me .heading-2 img {
+.about-me .containerForMiddleScreen .middleScreenHeading-2 img {
 	order: -1;
 }
 
-.about-me .heading-3 {
+.about-me .containerForMiddleScreen .middleScreenHeading-3 {
 	padding-bottom: 20px;
 }
-
-
 
 }
 
 @media screen and (min-width: 800px) {
 
-.about-me section div p {
+.about-me .containerForMiddleScreen section div p {
 	font-size: 18px;
 }
 
-.about-me section div h3 {
+.about-me .containerForMiddleScreen section div h3 {
 	font-size: 25px;
 }
 
@@ -107,11 +145,11 @@ main .heading-3 {
 	font-size: 40px;
 }
 
-.about-me section div p {
+.about-me .containerForMiddleScreen section div p {
 	font-size: 22px;
 }
 
-.about-me section div h3 {
+.about-me .containerForMiddleScreen section div h3 {
 	font-size: 32px;
 }
 

@@ -2,55 +2,57 @@
 
 let slideIndex = 1;
 
-function showSlides(n) {
-	let slides = document.getElementsByClassName('mySlides');
-	let dots = document.getElementsByClassName('demo');
-	let slideText = document.getElementsByClassName('centered');
+function showBigImage(n) {
+	let bigImages = document.getElementsByClassName('bigImage');
+	let smallImages = document.getElementsByClassName('smallImage');
+	let slideText = document.getElementsByClassName('bigImgText');
 
-	if (n > slides.length) {
+	if (n > bigImages.length) {
 		slideIndex = 1;
-	} else if (n < 1) {
-		slideIndex = slides.length;
+	} else if (n < 1) { 
+		slideIndex = bigImages.length;
 	};
 
-	for (let i = 0; i < slides.length; i++) {
-		slides[i].style.display = 'none';
+	for (let i = 0; i < bigImages.length; i++) {
+		bigImages[i].style.display = 'none';
 	}
-	for (let i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(' active', '');				
+	for (let i = 0; i < smallImages.length; i++) {
+		smallImages[i].className = smallImages[i].className.replace(' smallImgActive', '');				
 	}
 	for (let i = 0; i < slideText.length; i++) {
-		slideText[i].className = slideText[i].className.replace(' slideText', '');
+		slideText[i].className = slideText[i].className.replace(' bigImgText', '');
 	}	
 
-    slides[slideIndex -1].style.display = 'block';
-    slideText[slideIndex -1].className += ' slideText';
-    dots[slideIndex -1].className += ' active';
+    bigImages[slideIndex -1].style.display = 'block';
+    slideText[slideIndex -1].className += ' bigImgText';
+    smallImages[slideIndex -1].className += ' smallImgActive';
 }
-showSlides(slideIndex);
+showBigImage(slideIndex);
 
-function plusSlides() {
-	showSlides(slideIndex += 1);
+function plusBigImage() {
+	showBigImage(slideIndex += 1);
 }
 
 let previous = document.getElementsByClassName('prev')[0];
-previous.addEventListener('click', minusSlides);
+previous.addEventListener('click', minusBigImage);
 
-function minusSlides() {
-	showSlides(slideIndex -= 1);
+function minusBigImage() {
+	showBigImage(slideIndex -= 1);
 }
 
 let next = document.getElementsByClassName('next')[0];
-next.addEventListener('click', plusSlides);
+next.addEventListener('click', plusBigImage);
 
 function currentSlide(n) {
-	showSlides(slideIndex = n);
+	showBigImage(slideIndex = n);
 }
 
-let currentImage = document.getElementsByClassName('demo');
+let currentImage = document.getElementsByClassName('smallImage');
 	for (let i = 0; i < currentImage.length; i++) {
 		currentImage[i].addEventListener('click', function () {
 			currentSlide(currentImage[i].dataset.number);
 		});
 	}
 })();
+
+
